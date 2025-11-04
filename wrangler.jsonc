@@ -1,0 +1,39 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "zephyr",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-11-03",
+	"compatibility_flags": [
+	  "nodejs_compat"
+	],
+	// "vars": {
+	//   "MY_VAR": "my-variable"
+	// },
+	// "kv_namespaces": [
+	//   {
+	//     "binding": "MY_KV_NAMESPACE",
+	//     "id": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+	//   }
+	// ],
+	// "r2_buckets": [
+	//   {
+	//     "binding": "MY_BUCKET",
+	//     "bucket_name": "my-bucket"
+	//   }
+	// ],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "recipe",
+			"database_id": "95cdd8d6-9935-48fc-b312-2ed601c9aa59",
+			"remote": false
+		}
+	],
+	// "ai": {
+	//   "binding": "AI"
+	// },
+	"observability": {
+	  "enabled": true,
+	  "head_sampling_rate": 1
+	}
+}
