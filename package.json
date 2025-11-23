@@ -6,7 +6,8 @@
     "deploy": "wrangler deploy --minify",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings",
     "db:generate": "drizzle-kit generate",
-    "db:migrate": "drizzle-kit migrate"
+    "db:migrate": "drizzle-kit migrate",
+    "db:local": "npx wrangler d1 execute DB --local"
   },
   "dependencies": {
     "dotenv": "^17.2.3",

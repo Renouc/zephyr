@@ -1,5 +1,5 @@
-import { defineConfig } from 'drizzle-kit';
-import { ENV } from './src/config/env';
+import { defineConfig } from 'drizzle-kit'
+import { ENV } from './src/config/env'
 
 export default defineConfig({
   out: './src/db/migrations',
@@ -11,4 +11,4 @@ export default defineConfig({
     databaseId: ENV.CLOUDFLARE_DATABASE_ID!,
     token: ENV.CLOUDFLARE_D1_TOKEN!,
   },
-});
+})
